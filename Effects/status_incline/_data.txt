@@ -1,0 +1,12 @@
+[ファイル名] status_incline.sad
+[色タイプ] 256色
+[総コマ数] 7コマ
+
+コマ    幅      高さ   基準left  基準top
+[ 1]   35px,    35px,    18px,    18px
+[ 2]   35px,    35px,    17px,    17px
+[ 3]   35px,    35px,    17px,    20px
+[ 4]   35px,    35px,    17px,    17px
+[ 5]   35px,    35px,    18px,    17px
+[ 6]   35px,    35px,    16px,    18px
+[ 7]   35px,    35px,    16px,    22px

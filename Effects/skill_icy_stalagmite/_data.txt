@@ -1,0 +1,23 @@
+[ファイル名] skill_icy_stalagmite.sad
+[色タイプ] 256色
+[総コマ数] 18コマ
+
+コマ    幅      高さ   基準left  基準top
+[  1]   50px,    32px,    25px,  65509px
+[  2]   53px,    46px,    26px,  65521px
+[  3]   63px,    67px,    31px,     4px
+[  4]   76px,    84px,    36px,    18px
+[  5]   96px,   103px,    49px,    27px
+[  6]   96px,   103px,    49px,    27px
+[  7]   96px,   103px,    49px,    27px
+[  8]   96px,   103px,    49px,    27px
+[  9]   96px,   103px,    49px,    27px
+[ 10]   96px,   103px,    49px,    27px
+[ 11]  174px,   135px,    88px,    66px
+[ 12]  107px,   131px,    51px,    59px
+[ 13]  108px,   160px,    54px,    80px
+[ 14]  144px,   214px,    72px,   122px
+[ 15]  165px,   217px,    80px,   125px
+[ 16]  214px,   218px,   107px,   125px
+[ 17]  171px,   218px,    86px,   125px
+[ 18]  125px,   158px,    64px,    69px

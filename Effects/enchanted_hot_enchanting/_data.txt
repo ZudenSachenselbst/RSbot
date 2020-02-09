@@ -1,0 +1,17 @@
+[ファイル名] enchanted_hot_enchanting.sad
+[色タイプ] 256色
+[総コマ数] 12コマ
+
+コマ    幅      高さ   基準left  基準top
+[  1]  126px,    45px,    66px,     0px
+[  2]  126px,    45px,    66px,     0px
+[  3]  126px,    45px,    66px,     0px
+[  4]  128px,    46px,    67px,     0px
+[  5]  128px,    45px,    67px,     0px
+[  6]  126px,    45px,    66px,     0px
+[  7]  126px,    63px,    66px,    63px
+[  8]  127px,    63px,    66px,    63px
+[  9]  127px,    63px,    66px,    63px
+[ 10]  130px,    63px,    68px,    63px
+[ 11]  130px,    59px,    68px,    59px
+[ 12]  126px,    62px,    66px,    62px
