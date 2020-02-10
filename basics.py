@@ -412,3 +412,15 @@ def closeMap():
         print("マップを閉じる")
         click(789,11, 0.2)
 
+#################
+
+
+def is_inside(a,b): # view x,y
+    [ax,ay,aw,ah] = a
+    [bx,by,bw,bh] = b
+
+    if  ax <= bx and  bx + bw <= ax + aw  and ay <= by and by+bh <= ay+ah :
+        return True
+    else:
+        return False
+

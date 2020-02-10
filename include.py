@@ -1128,15 +1128,6 @@ def getCP():
 
 ###############
 
-def is_inside(a,b): # view x,y
-    [ax,ay,aw,ah] = a
-    [bx,by,bw,bh] = b
-
-    if  ax <= bx and  bx + bw <= ax + aw  and ay <= by and by+bh <= ay+ah :
-        return True
-    else:
-        return False
-
 #chat_area = [1,467, 149-1,490-467]
 #player_area = [360,146,444-360,292-146 ]
 

@@ -102,3 +102,7 @@ def circle_around(point, r=1):
         j -= r
         yield r, (i, j)
 
+
+chat_area = [1,467, 149-1,490-467]
+player_area = [360,146,444-360,292-146 ]
+

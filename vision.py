@@ -1,11 +1,15 @@
 
-from globals import *
 
+import scipy.signal
 import time
+#import pprint
 import pyautogui
 import cv2
 import numpy as np
 
+from globals import *
+from basics import *
+#from include import *
 
 # player が移動しているので上記の 静止画像からの moving object tectecton は
 # そのままでは利用できない。
@@ -13,20 +17,21 @@ import numpy as np
 # python - How to detect a shift between images - Stack Overflow https://stackoverflow.com/questions/24768222/how-to-detect-a-shift-between-images
 
 
-import scipy.signal
 
 def cross_image(im1, im2):
     # get rid of the color channels by performing a grayscale transform
     # the type cast into 'float' is to avoid overflows
     #im1_gray = np.sum(im1.astype('float'), axis=2)
     #im2_gray = np.sum(im2.astype('float'), axis=2)
-    im1_gray = im1
-    im2_gray = im2
-     
+    im1_gray = im1.astype('float')
+    im2_gray = im2.astype('float')
+
     # get rid of the averages, otherwise the results are not good
     im1_gray -= np.mean(im1_gray)
     im2_gray -= np.mean(im2_gray)
  
+    #print(im1_gray)
+    #print(im2_gray)
     # calculate the correlation image; note the flipping of onw of the images
     #return scipy.signal.fftconvolve(im1_gray, im2_gray[::-1,::-1], mode='same')
     corr_img = scipy.signal.fftconvolve(im1_gray, im2_gray[::-1,::-1], mode='same')
@@ -39,8 +44,9 @@ def cross_image(im1, im2):
 
 # フレーム差分の計算
 def frame_sub(img1, img2, img3, th):
-    chat_area = [1,467, 149-1,490-467]
-    player_area = [360,146,444-360,292-146 ]
+
+    #chat_area = [1,467, 149-1,490-467]
+    #player_area = [360,146,444-360,292-146 ]
     # フレームの絶対差分
     diff1 = cv2.absdiff(img1, img2)
     diff2 = cv2.absdiff(img2, img3)
@@ -121,6 +127,8 @@ def find_moving_objects():
                 rect = contours[i]
                 x, y, w, h = cv2.boundingRect(rect)
             
+                global chat_area
+                global player_area
                 if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ):
                     continue
                 moving_objects.append( [x,y,w,h ] ) 
