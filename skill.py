@@ -7,7 +7,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 from globals import *
-#from include import *
+from basics import *
 
 
 map_skill2icon = {
@@ -80,7 +80,6 @@ def skill2image(skill_name):
 
 
 
-'''
 def reset_wizard_skill_slot():
     #focusRS()
     # click F4, open skill 
@@ -96,7 +95,8 @@ def reset_wizard_skill_slot():
         # 中央上段
 
         "meteoShower":      (102,541),  # Q
-        "heist":            (138,541),  # W
+        #"heist":            (138,541),  # W
+        "haste":            (138,541),  # W
         "charging":         (175,541),  # E
         "doubleCharging":   (210,541),  # R
         "turkeyCharging":   (246,541),  # T
@@ -174,7 +174,6 @@ def reset_wizard_skill_slot():
 
     # close skill tab 
     PressKey( DIK_ESCAPE ) 
-'''
 
 ################
 
