@@ -83,8 +83,6 @@ def find_moving_objects():
 
     for t in range(100):
 
-        cross_image(frame1, frame2)
-        cross_image(frame2, frame3)
 
         #print(t, flush=True)
         # フレーム間差分を計算
@@ -93,6 +91,8 @@ def find_moving_objects():
         #mask = frame_sub(frame1, frame2, frame3, th=5)
         mask = frame_sub(frame1, frame2, frame3, th=3)
 
+        cross_image(frame1, frame2)
+        cross_image(frame2, frame3)
         ############
 
         # 輪郭を抽出
@@ -146,13 +146,20 @@ def find_moving_objects():
 
         print( "detect %d moving object" % (detect_count ), flush=True )
 
+        '''
         if 100 < detect_count :
             # maybe plyaer is moving
-            clickCenter()   # player を静止させる
-            time.sleep(1.0)
+            # clickCenter()   # player を静止させる
+            # time.sleep(1.0)
+
+            print("too many moving objects: maybe player is moving") 
+
         else:
             if 0 < detect_count :
                 return moving_objects
+        '''
+
+
 
         # 3枚のフレームを更新
         frame1 = frame2
