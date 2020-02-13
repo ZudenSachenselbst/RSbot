@@ -1,0 +1,626 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        basics [label="basics", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        include [label="include", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        redstone_map [label="redstone_map", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__HARDWAREINPUT [label="HARDWAREINPUT", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__HardwareInput [label="HardwareInput", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__INPUT [label="INPUT", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__Input [label="Input", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__Input_I [label="Input_I", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__KEYBDINPUT [label="KEYBDINPUT", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__KeyBdInput [label="KeyBdInput", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__Logger [label="Logger", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__MOUSEINPUT [label="MOUSEINPUT", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__MouseInput [label="MouseInput", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__MoveMouse [label="MoveMouse", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__MoveMouse2 [label="MoveMouse2", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__POINT [label="POINT", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__PressKey [label="PressKey", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__ReleaseKey [label="ReleaseKey", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics___check_count [label="_check_count", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__click [label="click", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__click2 [label="click2", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__clickCenter [label="clickCenter", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__closeMap [label="closeMap", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__focusRS [label="focusRS", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__is_inside [label="is_inside", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__myPressKey [label="myPressKey", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__myReleaseKey [label="myReleaseKey", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics"];
+            basics__my_print [label="my_print", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics__INPUT {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics.INPUT"];
+            basics__INPUT___INPUT [label="_INPUT", style="filled", fillcolor="#ff9999b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics__KEYBDINPUT {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics.KEYBDINPUT"];
+            basics__KEYBDINPUT____init__ [label="__init__", style="filled", fillcolor="#ff9999b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics__Logger {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics.Logger"];
+            basics__Logger____init__ [label="__init__", style="filled", fillcolor="#ff9999b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics__Logger {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics.Logger"];
+            basics__Logger__flush [label="flush", style="filled", fillcolor="#ff9999b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_basics__Logger {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="basics.Logger"];
+            basics__Logger__write [label="write", style="filled", fillcolor="#ff9999b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__RSlogin [label="RSlogin", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__adjustRSWindow [label="adjustRSWindow", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__adjust_point [label="adjust_point", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__adjust_waypoint [label="adjust_waypoint", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__character_login [label="character_login", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__click_NPC [label="click_NPC", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__click_gate [label="click_gate", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__click_object [label="click_object", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__click_pixel [label="click_pixel", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__closeDialogue [label="closeDialogue", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__compare_bitmap [label="compare_bitmap", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__cv2pil [label="cv2pil", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__findDigitCP [label="findDigitCP", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__findDigitFooterMinus [label="findDigitFooterMinus", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__findDigitFooter_normal [label="findDigitFooter_normal", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__findDigitFooter_reverse [label="findDigitFooter_reverse", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__findDigitNew [label="findDigitNew", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__find_image [label="find_image", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__find_path [label="find_path", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getCP [label="getCP", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getCPNew [label="getCPNew", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getFieldName [label="getFieldName", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getHP [label="getHP", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getMapName [label="getMapName", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__getPositionNew [label="getPositionNew", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__goto_object [label="goto_object", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__goto_pixel [label="goto_pixel", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__initialize [label="initialize", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__initialize2 [label="initialize2", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_NPC [label="is_NPC", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_enemy [label="is_enemy", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_player [label="is_player", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_reached [label="is_reached", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_roten [label="is_roten", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__is_vicinity [label="is_vicinity", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__map_locate [label="map_locate", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__move_to [label="move_to", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__move_toward [label="move_toward", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__my_imread [label="my_imread", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__op総合ポータル [label="op総合ポータル", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__pixel2pos [label="pixel2pos", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__pixel2view [label="pixel2view", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__pos2pixel [label="pos2pixel", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__resetRSWindow [label="resetRSWindow", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include"];
+            include__show_np_array [label="show_np_array", style="filled", fillcolor="#e5feccb2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include__find_path {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include.find_path"];
+            include__find_path__astar [label="astar", style="filled", fillcolor="#ccff99b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include__find_path {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include.find_path"];
+            include__find_path__block_diagonal [label="block_diagonal", style="filled", fillcolor="#ccff99b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include__find_path {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include.find_path"];
+            include__find_path__block_narrow_path [label="block_narrow_path", style="filled", fillcolor="#ccff99b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include__find_path {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include.find_path"];
+            include__find_path__find_room_nearby [label="find_room_nearby", style="filled", fillcolor="#ccff99b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_include__find_path {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="include.find_path"];
+            include__find_path__heuristic [label="heuristic", style="filled", fillcolor="#ccff99b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__edge2func [label="edge2func", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__find_area_nearby [label="find_area_nearby", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__find_route [label="find_route", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__get_mapname2png [label="get_mapname2png", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__get_name2pixel [label="get_name2pixel", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__guess_mapname [label="guess_mapname", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__is_korean_chr [label="is_korean_chr", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__list_mapname [label="list_mapname", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__list_mapname2png [label="list_mapname2png", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__prepare_world_map [label="prepare_world_map", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__show_around_burunen [label="show_around_burunen", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__show_around_city [label="show_around_city", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map"];
+            redstone_map__update_map_pos2pixel [label="update_map_pos2pixel", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_redstone_map__prepare_world_map {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="redstone_map.prepare_world_map"];
+            redstone_map__prepare_world_map__my_print [label="my_print", style="filled", fillcolor="#99feffb2", fontcolor="#000000", group="2"];
+        }
+    }
+        include -> basics [style="solid", color="#000000"];
+        include -> redstone_map [style="solid", color="#000000"];
+        include__closeDialogue -> basics__focusRS [style="solid", color="#000000"];
+        include__closeDialogue -> basics__click [style="solid", color="#000000"];
+        include__getFieldName -> include__is_vicinity [style="solid", color="#000000"];
+        include__getFieldName -> basics__focusRS [style="solid", color="#000000"];
+        include__getFieldName -> basics__click [style="solid", color="#000000"];
+        include__getMapName -> basics__MoveMouse [style="solid", color="#000000"];
+        include__getMapName -> redstone_map__guess_mapname [style="solid", color="#000000"];
+        include__getMapName -> basics__focusRS [style="solid", color="#000000"];
+        include__getMapName -> basics__clickCenter [style="solid", color="#000000"];
+        include__getMapName -> basics__closeMap [style="solid", color="#000000"];
+        include__getMapName -> include__compare_bitmap [style="solid", color="#000000"];
+        include__character_login -> basics__MoveMouse [style="solid", color="#000000"];
+        include__character_login -> basics__click [style="solid", color="#000000"];
+        include__findDigitNew -> include__compare_bitmap [style="solid", color="#000000"];
+        include__getPositionNew -> include__findDigitNew [style="solid", color="#000000"];
+        include__getPositionNew -> include__compare_bitmap [style="solid", color="#000000"];
+        include__getHP -> include__findDigitNew [style="solid", color="#000000"];
+        include__getHP -> basics__click [style="solid", color="#000000"];
+        include__getHP -> include__compare_bitmap [style="solid", color="#000000"];
+        include__findDigitCP -> redstone_map__prepare_world_map__my_print [style="solid", color="#000000"];
+        include__findDigitCP -> include__compare_bitmap [style="solid", color="#000000"];
+        include__findDigitCP -> basics__my_print [style="solid", color="#000000"];
+        include__getCPNew -> include__findDigitCP [style="solid", color="#000000"];
+        include__getCPNew -> include__compare_bitmap [style="solid", color="#000000"];
+        include__getCP -> include__findDigitFooter_normal [style="solid", color="#000000"];
+        include__getCP -> include__findDigitFooter_reverse [style="solid", color="#000000"];
+        include__getCP -> include__findDigitFooterMinus [style="solid", color="#000000"];
+        include__map_locate -> include__getPositionNew [style="solid", color="#000000"];
+        include__map_locate -> include__my_imread [style="solid", color="#000000"];
+        include__map_locate -> include__pos2pixel [style="solid", color="#000000"];
+        include__goto_object -> redstone_map__find_route [style="solid", color="#000000"];
+        include__goto_object -> include__initialize2 [style="solid", color="#000000"];
+        include__goto_object -> include__click_NPC [style="solid", color="#000000"];
+        include__goto_object -> include__click_gate [style="solid", color="#000000"];
+        include__goto_object -> include__goto_pixel [style="solid", color="#000000"];
+        include__goto_pixel -> include__getPositionNew [style="solid", color="#000000"];
+        include__goto_pixel -> redstone_map__get_mapname2png [style="solid", color="#000000"];
+        include__goto_pixel -> include__pos2pixel [style="solid", color="#000000"];
+        include__goto_pixel -> include__pixel2pos [style="solid", color="#000000"];
+        include__goto_pixel -> include__find_path [style="solid", color="#000000"];
+        include__goto_pixel -> include__move_toward [style="solid", color="#000000"];
+        include__goto_pixel -> include__move_to [style="solid", color="#000000"];
+        include__find_path -> include__find_path__astar [style="solid", color="#000000"];
+        include__find_path -> include__adjust_waypoint [style="solid", color="#000000"];
+        include__find_path -> include__my_imread [style="solid", color="#000000"];
+        include__find_path -> include__find_path__find_room_nearby [style="solid", color="#000000"];
+        include__find_path -> include__find_path__block_diagonal [style="solid", color="#000000"];
+        include__find_path -> include__find_path__block_narrow_path [style="solid", color="#000000"];
+        include__find_path__astar -> include__find_path__heuristic [style="solid", color="#000000"];
+        include__is_reached -> include__getPositionNew [style="solid", color="#000000"];
+        include__click_gate -> basics__click [style="solid", color="#000000"];
+        include__click_object -> include__click_pixel [style="solid", color="#000000"];
+        include__click_object -> redstone_map__get_name2pixel [style="solid", color="#000000"];
+        include__click_pixel -> include__getPositionNew [style="solid", color="#000000"];
+        include__click_pixel -> include__pixel2view [style="solid", color="#000000"];
+        include__click_pixel -> basics__click [style="solid", color="#000000"];
+        include__click_pixel -> include__pos2pixel [style="solid", color="#000000"];
+        include__click_NPC -> include__getPositionNew [style="solid", color="#000000"];
+        include__click_NPC -> basics__MoveMouse [style="solid", color="#000000"];
+        include__click_NPC -> include__pixel2view [style="solid", color="#000000"];
+        include__click_NPC -> redstone_map__get_name2pixel [style="solid", color="#000000"];
+        include__click_NPC -> basics__click [style="solid", color="#000000"];
+        include__click_NPC -> include__is_NPC [style="solid", color="#000000"];
+        include__click_NPC -> include__pos2pixel [style="solid", color="#000000"];
+        include__move_toward -> include__getPositionNew [style="solid", color="#000000"];
+        include__move_toward -> basics__MoveMouse [style="solid", color="#000000"];
+        include__move_toward -> basics__click [style="solid", color="#000000"];
+        include__move_toward -> include__is_roten [style="solid", color="#000000"];
+        include__move_toward -> include__is_reached [style="solid", color="#000000"];
+        include__move_toward -> include__is_player [style="solid", color="#000000"];
+        include__move_toward -> include__is_enemy [style="solid", color="#000000"];
+        include__move_to -> include__is_reached [style="solid", color="#000000"];
+        include__move_to -> include__map_locate [style="solid", color="#000000"];
+        include__move_to -> include__move_toward [style="solid", color="#000000"];
+        include__RSlogin -> basics__ReleaseKey [style="solid", color="#000000"];
+        include__RSlogin -> basics__MoveMouse [style="solid", color="#000000"];
+        include__RSlogin -> basics__click [style="solid", color="#000000"];
+        include__RSlogin -> basics__PressKey [style="solid", color="#000000"];
+        include__initialize2 -> include__getPositionNew [style="solid", color="#000000"];
+        include__initialize2 -> include__closeDialogue [style="solid", color="#000000"];
+        include__initialize2 -> include__getCPNew [style="solid", color="#000000"];
+        include__initialize2 -> basics__closeMap [style="solid", color="#000000"];
+        include__initialize2 -> include__getHP [style="solid", color="#000000"];
+        include__initialize2 -> redstone_map__update_map_pos2pixel [style="solid", color="#000000"];
+        include__initialize2 -> include__getMapName [style="solid", color="#000000"];
+        include__initialize -> include__closeDialogue [style="solid", color="#000000"];
+        include__initialize -> include__getMapName [style="solid", color="#000000"];
+        include__initialize -> include__getPositionNew [style="solid", color="#000000"];
+        include__initialize -> include__adjustRSWindow [style="solid", color="#000000"];
+        include__initialize -> basics__click [style="solid", color="#000000"];
+        include__initialize -> include__getHP [style="solid", color="#000000"];
+        include__initialize -> include__character_login [style="solid", color="#000000"];
+        include__initialize -> redstone_map__update_map_pos2pixel [style="solid", color="#000000"];
+        include__initialize -> basics__focusRS [style="solid", color="#000000"];
+        include__initialize -> include__RSlogin [style="solid", color="#000000"];
+        include__initialize -> basics__closeMap [style="solid", color="#000000"];
+        include__initialize -> redstone_map__prepare_world_map [style="solid", color="#000000"];
+        include__initialize -> include__getCPNew [style="solid", color="#000000"];
+        include__op総合ポータル -> basics__click [style="solid", color="#000000"];
+        include__op総合ポータル -> basics__PressKey [style="solid", color="#000000"];
+        basics -> basics__Logger____init__ [style="solid", color="#000000"];
+        basics -> basics__INPUT [style="solid", color="#000000"];
+        basics -> basics___check_count [style="solid", color="#000000"];
+        basics -> basics__Logger [style="solid", color="#000000"];
+        basics__Logger__write -> basics__Logger__write [style="solid", color="#000000"];
+        basics__Logger__flush -> basics__Logger__flush [style="solid", color="#000000"];
+        basics__Input_I -> basics__MouseInput [style="solid", color="#000000"];
+        basics__Input_I -> basics__HardwareInput [style="solid", color="#000000"];
+        basics__Input_I -> basics__KeyBdInput [style="solid", color="#000000"];
+        basics__Input -> basics__Input_I [style="solid", color="#000000"];
+        basics__PressKey -> basics__Input_I [style="solid", color="#000000"];
+        basics__PressKey -> basics__Input [style="solid", color="#000000"];
+        basics__PressKey -> basics__KeyBdInput [style="solid", color="#000000"];
+        basics__ReleaseKey -> basics__Input_I [style="solid", color="#000000"];
+        basics__ReleaseKey -> basics__Input [style="solid", color="#000000"];
+        basics__ReleaseKey -> basics__KeyBdInput [style="solid", color="#000000"];
+        basics__MoveMouse -> basics__MouseInput [style="solid", color="#000000"];
+        basics__MoveMouse -> basics__Input_I [style="solid", color="#000000"];
+        basics__MoveMouse -> basics__Input [style="solid", color="#000000"];
+        basics__MoveMouse2 -> basics__MouseInput [style="solid", color="#000000"];
+        basics__MoveMouse2 -> basics__Input_I [style="solid", color="#000000"];
+        basics__MoveMouse2 -> basics__Input [style="solid", color="#000000"];
+        basics__INPUT -> basics__INPUT___INPUT [style="solid", color="#000000"];
+        basics__INPUT___INPUT -> basics__HARDWAREINPUT [style="solid", color="#000000"];
+        basics__INPUT___INPUT -> basics__MOUSEINPUT [style="solid", color="#000000"];
+        basics__INPUT___INPUT -> basics__KEYBDINPUT [style="solid", color="#000000"];
+        basics__myPressKey -> basics__KEYBDINPUT____init__ [style="solid", color="#000000"];
+        basics__myPressKey -> basics__INPUT [style="solid", color="#000000"];
+        basics__myPressKey -> basics__KEYBDINPUT [style="solid", color="#000000"];
+        basics__myReleaseKey -> basics__KEYBDINPUT____init__ [style="solid", color="#000000"];
+        basics__myReleaseKey -> basics__INPUT [style="solid", color="#000000"];
+        basics__myReleaseKey -> basics__KEYBDINPUT [style="solid", color="#000000"];
+        basics__click -> basics__MoveMouse [style="solid", color="#000000"];
+        basics__click2 -> basics__MoveMouse [style="solid", color="#000000"];
+        basics__focusRS -> basics__click [style="solid", color="#000000"];
+        basics__clickCenter -> basics__click [style="solid", color="#000000"];
+        basics__closeMap -> basics__focusRS [style="solid", color="#000000"];
+        basics__closeMap -> basics__click [style="solid", color="#000000"];
+        redstone_map__prepare_world_map -> redstone_map__is_korean_chr [style="solid", color="#000000"];
+        redstone_map__prepare_world_map -> redstone_map__show_around_burunen [style="solid", color="#000000"];
+        redstone_map__prepare_world_map -> redstone_map__prepare_world_map__my_print [style="solid", color="#000000"];
+        redstone_map__show_around_burunen -> redstone_map__show_around_city [style="solid", color="#000000"];
+        redstone_map__guess_mapname -> redstone_map__list_mapname [style="solid", color="#000000"];
+        redstone_map__find_route -> redstone_map__edge2func [style="solid", color="#000000"];
+    }
