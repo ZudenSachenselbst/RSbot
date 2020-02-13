@@ -1,0 +1,3813 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <key for="node" id="d0" yfiles.type="nodegraphics"/>
+  <key for="edge" id="d1" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="Graph">
+    <node id="G:" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#CCCCCC" transparent="false"/>
+              <y:NodeLabel modelName="internal" modelPosition="t" alignment="right"></y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="G::">
+        <node id="basics">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Geometry height="30" width="80"/>
+              <y:Fill color="#ffffffb2" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel>basics</y:NodeLabel>
+              <y:Shape type="ellipse"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="include">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Geometry height="30" width="90"/>
+              <y:Fill color="#ffffffb2" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel>include</y:NodeLabel>
+              <y:Shape type="ellipse"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="redstone_map">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Geometry height="30" width="140"/>
+              <y:Fill color="#ffffffb2" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel>redstone_map</y:NodeLabel>
+              <y:Shape type="ellipse"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__HARDWAREINPUT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>HARDWAREINPUT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__HardwareInput">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>HardwareInput</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__INPUT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>INPUT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__Input">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>Input</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__Input_I">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="90"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>Input_I</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__KEYBDINPUT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>KEYBDINPUT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__KeyBdInput">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>KeyBdInput</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__Logger">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="80"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>Logger</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__MOUSEINPUT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>MOUSEINPUT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__MouseInput">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>MouseInput</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__MoveMouse">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>MoveMouse</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__MoveMouse2">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>MoveMouse2</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__POINT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>POINT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__PressKey">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>PressKey</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__ReleaseKey">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>ReleaseKey</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics___check_count">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>_check_count</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__click">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__click2">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="80"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click2</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__clickCenter">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>clickCenter</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__closeMap">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>closeMap</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__focusRS">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="90"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>focusRS</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__is_inside">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_inside</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__myPressKey">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>myPressKey</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__myReleaseKey">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>myReleaseKey</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics::">
+            <node id="basics__my_print">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#feccccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>my_print</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics__INPUT:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics.INPUT</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics__INPUT::">
+            <node id="basics__INPUT___INPUT">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="80"/>
+                  <y:Fill color="#ff9999b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>_INPUT</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics__KEYBDINPUT:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics.KEYBDINPUT</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics__KEYBDINPUT::">
+            <node id="basics__KEYBDINPUT____init__">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#ff9999b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>__init__</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics__Logger:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics.Logger</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics__Logger::">
+            <node id="basics__Logger____init__">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#ff9999b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>__init__</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics__Logger:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics.Logger</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics__Logger::">
+            <node id="basics__Logger__flush">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#ff9999b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>flush</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="basics__Logger:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">basics.Logger</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="basics__Logger::">
+            <node id="basics__Logger__write">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#ff9999b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>write</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__RSlogin">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="90"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>RSlogin</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__adjustRSWindow">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="160"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>adjustRSWindow</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__adjust_point">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>adjust_point</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__adjust_waypoint">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="170"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>adjust_waypoint</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__character_login">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="170"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>character_login</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__click_NPC">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click_NPC</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__click_gate">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click_gate</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__click_object">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click_object</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__click_pixel">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>click_pixel</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__closeDialogue">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>closeDialogue</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__compare_bitmap">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="160"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>compare_bitmap</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__cv2pil">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="80"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>cv2pil</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__findDigitCP">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>findDigitCP</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__findDigitFooterMinus">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="220"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>findDigitFooterMinus</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__findDigitFooter_normal">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="240"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>findDigitFooter_normal</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__findDigitFooter_reverse">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="250"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>findDigitFooter_reverse</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__findDigitNew">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>findDigitNew</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__find_image">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>find_image</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__find_path">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>find_path</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getCP">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getCP</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getCPNew">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getCPNew</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getFieldName">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getFieldName</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getHP">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getHP</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getMapName">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getMapName</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__getPositionNew">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="160"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>getPositionNew</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__goto_object">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>goto_object</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__goto_pixel">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>goto_pixel</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__initialize">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>initialize</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__initialize2">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>initialize2</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_NPC">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="80"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_NPC</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_enemy">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_enemy</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_player">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_player</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_reached">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_reached</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_roten">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_roten</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__is_vicinity">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_vicinity</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__map_locate">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>map_locate</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__move_to">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="90"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>move_to</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__move_toward">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="130"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>move_toward</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__my_imread">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>my_imread</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__op総合ポータル">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>op総合ポータル</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__pixel2pos">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>pixel2pos</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__pixel2view">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>pixel2view</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__pos2pixel">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>pos2pixel</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__resetRSWindow">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>resetRSWindow</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include::">
+            <node id="include__show_np_array">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#e5feccb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>show_np_array</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include__find_path:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include.find_path</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include__find_path::">
+            <node id="include__find_path__astar">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="70"/>
+                  <y:Fill color="#ccff99b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>astar</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include__find_path:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include.find_path</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include__find_path::">
+            <node id="include__find_path__block_diagonal">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="160"/>
+                  <y:Fill color="#ccff99b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>block_diagonal</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include__find_path:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include.find_path</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include__find_path::">
+            <node id="include__find_path__block_narrow_path">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="190"/>
+                  <y:Fill color="#ccff99b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>block_narrow_path</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include__find_path:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include.find_path</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include__find_path::">
+            <node id="include__find_path__find_room_nearby">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="180"/>
+                  <y:Fill color="#ccff99b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>find_room_nearby</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="include__find_path:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">include.find_path</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="include__find_path::">
+            <node id="include__find_path__heuristic">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#ccff99b2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>heuristic</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__edge2func">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="110"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>edge2func</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__find_area_nearby">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="180"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>find_area_nearby</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__find_route">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="120"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>find_route</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__get_mapname2png">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="170"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>get_mapname2png</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__get_name2pixel">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="160"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>get_name2pixel</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__guess_mapname">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>guess_mapname</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__is_korean_chr">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="150"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>is_korean_chr</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__list_mapname">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="140"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>list_mapname</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__list_mapname2png">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="180"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>list_mapname2png</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__prepare_world_map">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="190"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>prepare_world_map</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__show_around_burunen">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="210"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>show_around_burunen</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__show_around_city">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="180"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>show_around_city</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map::">
+            <node id="redstone_map__update_map_pos2pixel">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="220"/>
+                  <y:Fill color="#ccfefeb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>update_map_pos2pixel</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="redstone_map__prepare_world_map:" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#CCCCCC" transparent="false"/>
+                  <y:NodeLabel modelName="internal" modelPosition="t" alignment="right">redstone_map.prepare_world_map</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="redstone_map__prepare_world_map::">
+            <node id="redstone_map__prepare_world_map__my_print">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Geometry height="30" width="100"/>
+                  <y:Fill color="#99feffb2" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel>my_print</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+      </graph>
+    </node>
+    <edge id="1" source="include" target="basics">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="2" source="include" target="redstone_map">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="3" source="include__closeDialogue" target="basics__focusRS">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="4" source="include__closeDialogue" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="5" source="include__getFieldName" target="include__is_vicinity">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="6" source="include__getFieldName" target="basics__focusRS">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="7" source="include__getFieldName" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="8" source="include__getMapName" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="9" source="include__getMapName" target="redstone_map__guess_mapname">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="10" source="include__getMapName" target="basics__focusRS">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="11" source="include__getMapName" target="basics__clickCenter">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="12" source="include__getMapName" target="basics__closeMap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="13" source="include__getMapName" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="14" source="include__character_login" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="15" source="include__character_login" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="16" source="include__findDigitNew" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="17" source="include__getPositionNew" target="include__findDigitNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="18" source="include__getPositionNew" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="19" source="include__getHP" target="include__findDigitNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="20" source="include__getHP" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="21" source="include__getHP" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="22" source="include__findDigitCP" target="redstone_map__prepare_world_map__my_print">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="23" source="include__findDigitCP" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="24" source="include__findDigitCP" target="basics__my_print">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="25" source="include__getCPNew" target="include__findDigitCP">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="26" source="include__getCPNew" target="include__compare_bitmap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="27" source="include__getCP" target="include__findDigitFooter_normal">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="28" source="include__getCP" target="include__findDigitFooter_reverse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="29" source="include__getCP" target="include__findDigitFooterMinus">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="30" source="include__map_locate" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="31" source="include__map_locate" target="include__my_imread">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="32" source="include__map_locate" target="include__pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="33" source="include__goto_object" target="redstone_map__find_route">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="34" source="include__goto_object" target="include__initialize2">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="35" source="include__goto_object" target="include__click_NPC">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="36" source="include__goto_object" target="include__click_gate">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="37" source="include__goto_object" target="include__goto_pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="38" source="include__goto_pixel" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="39" source="include__goto_pixel" target="redstone_map__get_mapname2png">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="40" source="include__goto_pixel" target="include__pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="41" source="include__goto_pixel" target="include__pixel2pos">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="42" source="include__goto_pixel" target="include__find_path">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="43" source="include__goto_pixel" target="include__move_toward">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="44" source="include__goto_pixel" target="include__move_to">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="45" source="include__find_path" target="include__find_path__astar">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="46" source="include__find_path" target="include__adjust_waypoint">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="47" source="include__find_path" target="include__my_imread">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="48" source="include__find_path" target="include__find_path__find_room_nearby">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="49" source="include__find_path" target="include__find_path__block_diagonal">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="50" source="include__find_path" target="include__find_path__block_narrow_path">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="51" source="include__find_path__astar" target="include__find_path__heuristic">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="52" source="include__is_reached" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="53" source="include__click_gate" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="54" source="include__click_object" target="include__click_pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="55" source="include__click_object" target="redstone_map__get_name2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="56" source="include__click_pixel" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="57" source="include__click_pixel" target="include__pixel2view">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="58" source="include__click_pixel" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="59" source="include__click_pixel" target="include__pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="60" source="include__click_NPC" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="61" source="include__click_NPC" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="62" source="include__click_NPC" target="include__pixel2view">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="63" source="include__click_NPC" target="redstone_map__get_name2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="64" source="include__click_NPC" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="65" source="include__click_NPC" target="include__is_NPC">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="66" source="include__click_NPC" target="include__pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="67" source="include__move_toward" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="68" source="include__move_toward" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="69" source="include__move_toward" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="70" source="include__move_toward" target="include__is_roten">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="71" source="include__move_toward" target="include__is_reached">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="72" source="include__move_toward" target="include__is_player">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="73" source="include__move_toward" target="include__is_enemy">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="74" source="include__move_to" target="include__is_reached">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="75" source="include__move_to" target="include__map_locate">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="76" source="include__move_to" target="include__move_toward">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="77" source="include__RSlogin" target="basics__ReleaseKey">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="78" source="include__RSlogin" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="79" source="include__RSlogin" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="80" source="include__RSlogin" target="basics__PressKey">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="81" source="include__initialize2" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="82" source="include__initialize2" target="include__closeDialogue">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="83" source="include__initialize2" target="include__getCPNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="84" source="include__initialize2" target="basics__closeMap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="85" source="include__initialize2" target="include__getHP">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="86" source="include__initialize2" target="redstone_map__update_map_pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="87" source="include__initialize2" target="include__getMapName">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="88" source="include__initialize" target="include__closeDialogue">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="89" source="include__initialize" target="include__getMapName">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="90" source="include__initialize" target="include__getPositionNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="91" source="include__initialize" target="include__adjustRSWindow">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="92" source="include__initialize" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="93" source="include__initialize" target="include__getHP">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="94" source="include__initialize" target="include__character_login">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="95" source="include__initialize" target="redstone_map__update_map_pos2pixel">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="96" source="include__initialize" target="basics__focusRS">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="97" source="include__initialize" target="include__RSlogin">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="98" source="include__initialize" target="basics__closeMap">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="99" source="include__initialize" target="redstone_map__prepare_world_map">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="100" source="include__initialize" target="include__getCPNew">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="101" source="include__op総合ポータル" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="102" source="include__op総合ポータル" target="basics__PressKey">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="103" source="basics" target="basics__Logger____init__">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="104" source="basics" target="basics__INPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="105" source="basics" target="basics___check_count">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="106" source="basics" target="basics__Logger">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="107" source="basics__Logger__write" target="basics__Logger__write">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="108" source="basics__Logger__flush" target="basics__Logger__flush">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="109" source="basics__Input_I" target="basics__MouseInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="110" source="basics__Input_I" target="basics__HardwareInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="111" source="basics__Input_I" target="basics__KeyBdInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="112" source="basics__Input" target="basics__Input_I">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="113" source="basics__PressKey" target="basics__Input_I">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="114" source="basics__PressKey" target="basics__Input">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="115" source="basics__PressKey" target="basics__KeyBdInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="116" source="basics__ReleaseKey" target="basics__Input_I">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="117" source="basics__ReleaseKey" target="basics__Input">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="118" source="basics__ReleaseKey" target="basics__KeyBdInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="119" source="basics__MoveMouse" target="basics__MouseInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="120" source="basics__MoveMouse" target="basics__Input_I">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="121" source="basics__MoveMouse" target="basics__Input">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="122" source="basics__MoveMouse2" target="basics__MouseInput">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="123" source="basics__MoveMouse2" target="basics__Input_I">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="124" source="basics__MoveMouse2" target="basics__Input">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="125" source="basics__INPUT" target="basics__INPUT___INPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="126" source="basics__INPUT___INPUT" target="basics__HARDWAREINPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="127" source="basics__INPUT___INPUT" target="basics__MOUSEINPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="128" source="basics__INPUT___INPUT" target="basics__KEYBDINPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="129" source="basics__myPressKey" target="basics__KEYBDINPUT____init__">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="130" source="basics__myPressKey" target="basics__INPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="131" source="basics__myPressKey" target="basics__KEYBDINPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="132" source="basics__myReleaseKey" target="basics__KEYBDINPUT____init__">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="133" source="basics__myReleaseKey" target="basics__INPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="134" source="basics__myReleaseKey" target="basics__KEYBDINPUT">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="135" source="basics__click" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="136" source="basics__click2" target="basics__MoveMouse">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="137" source="basics__focusRS" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="138" source="basics__clickCenter" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="139" source="basics__closeMap" target="basics__focusRS">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="140" source="basics__closeMap" target="basics__click">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="141" source="redstone_map__prepare_world_map" target="redstone_map__is_korean_chr">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="142" source="redstone_map__prepare_world_map" target="redstone_map__show_around_burunen">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="143" source="redstone_map__prepare_world_map" target="redstone_map__prepare_world_map__my_print">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="144" source="redstone_map__show_around_burunen" target="redstone_map__show_around_city">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="145" source="redstone_map__guess_mapname" target="redstone_map__list_mapname">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="146" source="redstone_map__find_route" target="redstone_map__edge2func">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+</graphml>
