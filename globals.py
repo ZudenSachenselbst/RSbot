@@ -66,8 +66,23 @@ status = {
     "currentHP" : -1 ,
     "fullHP"    : -1 ,
 
-    "enchanted"  : {}
+    "enchanted"  : {}, 
+
+    "where":""  # onGate など
+
     } 
+
+###############
+# icon 関連
+# 通常カーソルアイコン、敵カーソルアイコン、NPCカーソルアイコンへのポインタ
+# RS 実行毎に変化する
+# initialize() 時および敵/NPC遭遇時に更新する。
+cursor = { 
+    "normal":-1,
+    "enemy":-1,
+    "NPC":-1,
+    "roten":-1
+    }
 
 ###############
 #

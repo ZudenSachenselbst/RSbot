@@ -1237,8 +1237,9 @@ def pixel2view(x,y):    # pixel x,y
 def goto_object(name): 
     # 現在のマップや別のマップの人物やオブジェクトのところへ移動する。
     global status
-    route = find_route( status["mapName"], name) 
+    route = find_route( status["mapName"], name)    # usually player is on gate
     print("route=", route)
+    status["where"] = ""
     #for waypoint in route:
     for i, waypoint in enumerate(route):
         from_name, to_name, x, y, from_type, to_type, info = waypoint
@@ -1250,6 +1251,7 @@ def goto_object(name):
             result = yield from goto_pixel( x, y) 
             if result:
                 click_gate()
+                status["where"] = "gate"
                 time.sleep(5)
             else:
                 print("failed!")
@@ -2016,41 +2018,72 @@ def move_to(x,y):   #position x,y
             return True
     return False
 
+############################
+# cursor 関係
+
+def setCursorNormal():
+    global cursor
+    focusRS()
+    clickCenter()
+    time.sleep(0.1)
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    cursor["normal"] = out[1]
+
+def getCursor():
+    global cursor
+
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    if out[1] ==cursor["normal"]:
+        #print("normal")
+        return "normal"
+    if 0 <= cursor["enemy"] and out[1] ==cursor["enemy"]:
+        #print("enemy")
+        return("enemy")
+    if 0 <= cursor["NPC"] and out[1] ==cursor["NPC"]:
+        #print("NPC")
+        return("NPC")
+    if 0 <= cursor["roten"] and out[1] ==cursor["roten"]:
+        #print("roten")
+        return("roten")
+
+    info = win32gui.GetIconInfo( out[1] ) 
+    print(info)
+
+    if info[1] == 9:    # NPC 
+        cursor["NPC"] = out[1]
+        #print("NPC")
+        return("NPC")
+
+    if info[1] == 1:    # roten 
+        cursor["roten"] = out[1]
+        #print("roten")
+        return("roten")
+
+    # enemy
+    cursor["enemy"] = out[1]
+    #print("enemy")
+    return("enemy")
+
+
 def is_NPC():
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    # if out[1] == 459311:
-    if out[1] == 459311 or out[1] == 2163225 or out[1] == 262673:
-        print("find NPC")
+    if getCursor() == "NPC":
         return True
     else:
         return False
 
 
-
 def is_enemy():
-    #x, y = pyautogui.position()
-    # time.sleep(0.1)
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    #if out[1] == 8258077:
-    if out[1] == 8258077 or out[1] == 197189 or out[1] == 328203 :
-        print("find enemy")
+    if getCursor() == "enemy":
         return True
     else:
         return False
 
 def is_roten():
-    #x, y = pyautogui.position()
-    #time.sleep(0.1)
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    #if out[1] == 1376837:
-    if out[1] == 1376837 or out[1] == 66127:
-        print("find roten")
+    if getCursor() == "roten":
         return True
     else:
         return False
+
 
 def is_player():
     #debug = False
@@ -2272,6 +2305,7 @@ def initialize2(mapname):
     #getCP()
     getCPNew()
     getHP()
+    setCursorNormal()
     getPositionNew()
     #prepare_world_map()
     #load_map_pos2pixel()
@@ -2332,6 +2366,7 @@ def initialize():
     #getCP()
     getCPNew()
     getHP()
+    setCursorNormal()
     getPositionNew()
     #load_map_pos2pixel()
     update_map_pos2pixel()
@@ -2363,12 +2398,13 @@ def loop_update_status():
             getCPNew()
             update_enchanted_status()
             if not status["enchanted"]["haste"][0]: # haste が切れている           
-                print(">>>haste")
-                clickCenter()
-                PressKey( DIK_W ) 
-                time.sleep(0.01)
-                ReleaseKey(DIK_W)
-                time.sleep(0.01)
+                if status["where"] != "gate":
+                    print(">>>haste")
+                    clickCenter()
+                    PressKey( DIK_W ) 
+                    time.sleep(0.01)
+                    ReleaseKey(DIK_W)
+                    time.sleep(0.01)
 
             # getPositionNew()
         yield from asyncio.sleep(0.001)
