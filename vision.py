@@ -1,4 +1,13 @@
 
+'''
+【Python/OpenCV】フレーム間差分法で移動物体の検出 | 技術雑記 https://algorithm.joho.info/programming/python/opencv-frame-difference-py/
+
+Basic motion detection and tracking with Python and OpenCV - PyImageSearch https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/
+
+PythonとOpenCVを使って物体検出をやってみた - Qiita https://qiita.com/neriai/items/448a36992e308f4cabe2
+
+'''
+
 
 import scipy.signal
 import time
@@ -37,7 +46,11 @@ def cross_image(im1, im2):
     corr_img = scipy.signal.fftconvolve(im1_gray, im2_gray[::-1,::-1], mode='same')
      
     shift = np.unravel_index(np.argmax(corr_img), corr_img.shape)
-    print(shift)
+    (x, y) = shift
+    out = ( x - 247, y - 400 )
+    print("shift", out) 
+    return out 
+
     
 
 
@@ -64,19 +77,68 @@ def frame_sub(img1, img2, img3, th):
 
     return  mask
 
+
+def shift_image(image, shift):
+    print("enter shift_image()")
+    #print("image=", image) 
+    y,x = shift
+    my = -y
+    mx = -x
+
+    #image = np.roll( image, (-moving_y,-moving_x),  axis=(0,1)) 
+    image = np.roll( image, (my,mx),  axis=(0,1)) 
+    return image
+
+
+def trim_image(image, shift):
+    y,x = shift
+    my = -y
+    mx = -x
+
+    if   0 < my: 
+        image[0:my, :] = 0
+    elif 0 > my:
+        image[my:,  :] = 0
+
+    if   mx > 0:
+        image[:, 0:mx] = 0
+    elif mx > 0:
+        image[:, mx: ] = 0
+
+    #cv2.imshow('after', frame2)
+    #cv2.moveWindow("frame2", 1000,40 ) 
+    #cv2.waitKey(100)
+
+    return image
+
+
+import asyncio
+import itertools
+@asyncio.coroutine
+def loop_find_moving_objects():
+    while True:
+        yield from find_moving_objects()
+
+
+@asyncio.coroutine
 def find_moving_objects():
 
     # カメラのキャプチャ
 
     sc1 = pyautogui.screenshot( region=(0,0,800, 495) )
     frame1 = cv2.cvtColor(np.array(sc1), cv2.COLOR_RGB2GRAY)
-    time.sleep(0.01)
+    #time.sleep(0.01)
+    yield from asyncio.sleep(0.001)
+
+
     sc2 = pyautogui.screenshot( region=(0,0,800, 495) )
     src = np.array(sc2)
     frame2 = cv2.cvtColor(np.array(sc2), cv2.COLOR_RGB2GRAY)
-    time.sleep(0.01)
+    yield from asyncio.sleep(0.001)
+
     sc3 = pyautogui.screenshot( region=(0,0,800, 495) )
     frame3 = cv2.cvtColor(np.array(sc3), cv2.COLOR_RGB2GRAY)
+
 
     detect_count = 0
     moving_objects = []
@@ -84,15 +146,17 @@ def find_moving_objects():
     for t in range(100):
 
 
-        #print(t, flush=True)
+
         # フレーム間差分を計算
         #mask = frame_sub(frame1, frame2, frame3, th=30)
         #mask = frame_sub(frame1, frame2, frame3, th=10)
         #mask = frame_sub(frame1, frame2, frame3, th=5)
         mask = frame_sub(frame1, frame2, frame3, th=3)
 
-        cross_image(frame1, frame2)
-        cross_image(frame2, frame3)
+        #shift1 = cross_image(frame1, frame2)
+        #shift2 = cross_image(frame2, frame3)
+
+
         ############
 
         # 輪郭を抽出
@@ -129,7 +193,7 @@ def find_moving_objects():
             
                 global chat_area
                 global player_area
-                if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ):
+                if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ) or is_inside( coordinate_area, [x,y,w,h ] ):
                     continue
                 moving_objects.append( [x,y,w,h ] ) 
                 cv2.rectangle(src, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -139,25 +203,16 @@ def find_moving_objects():
                
                 detect_count = detect_count + 1
 
+        global moving_object
+        moving_object = moving_objects
+
         # 外接矩形された画像を表示
         cv2.imshow('output', src)
-        cv2.moveWindow("output", 900,20)
+        cv2.moveWindow("output", 1100,120)
         cv2.waitKey(100)
+        yield from asyncio.sleep(0.001)
 
         print( "detect %d moving object" % (detect_count ), flush=True )
-
-        '''
-        if 100 < detect_count :
-            # maybe plyaer is moving
-            # clickCenter()   # player を静止させる
-            # time.sleep(1.0)
-
-            print("too many moving objects: maybe player is moving") 
-
-        else:
-            if 0 < detect_count :
-                return moving_objects
-        '''
 
 
 
@@ -168,12 +223,4 @@ def find_moving_objects():
         src = np.array(sc)
         frame3 = cv2.cvtColor(np.array(sc), cv2.COLOR_RGB2GRAY)
             
-'''
-【Python/OpenCV】フレーム間差分法で移動物体の検出 | 技術雑記 https://algorithm.joho.info/programming/python/opencv-frame-difference-py/
-
-Basic motion detection and tracking with Python and OpenCV - PyImageSearch https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/
-
-PythonとOpenCVを使って物体検出をやってみた - Qiita https://qiita.com/neriai/items/448a36992e308f4cabe2
-
-'''
 

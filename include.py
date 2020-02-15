@@ -612,11 +612,13 @@ def getHP():
 
     # focusRS()
     #click(410,560, 1.0)
+    (orgX, orgY) = getMousePos()
     click(410,560) 
 
     # sc1 = pyautogui.screenshot( region=(0,0,800, 20) )
     sc1 = pyautogui.screenshot( region=( 353, 547, 60, 20 ) ) 
     # pyautogui.screenshot( "sc.png",  region=( 353, 547, 60, 20 ) ) 
+    MoveMouse(orgX, orgY)   # マウス位置を元に戻す。
 
     gray = np.array(sc1)
     gray = cv2.cvtColor(gray, cv2.COLOR_BGR2GRAY)
@@ -1955,7 +1957,7 @@ def click_NPC(name):   # pixel x,y
         return
     else:
         gen = circle_around( (xx,yy), 20 ) 
-        thres = 30
+        thres = 40
         for i in range(thres):
             j, point = next(gen)
             xx, yy = point
@@ -2073,7 +2075,9 @@ def is_NPC():
 
 
 def is_enemy():
+    global enemy
     if getCursor() == "enemy":
+        enemy.append(  getMousePos() ) 
         return True
     else:
         return False
@@ -2400,12 +2404,55 @@ def loop_update_status():
             if not status["enchanted"]["haste"][0]: # haste が切れている           
                 if status["where"] != "gate":
                     print(">>>haste")
+                    (orgX, orgY) = getCursorPos()
                     clickCenter()
                     PressKey( DIK_W ) 
                     time.sleep(0.01)
                     ReleaseKey(DIK_W)
                     time.sleep(0.01)
+                    MoveMouse(orgX, orgY)   # 元の位置にマウスを戻す
 
             # getPositionNew()
         yield from asyncio.sleep(0.001)
 
+@asyncio.coroutine
+def loop_dummy():
+    while True:
+        #time.sleep(1.0)
+        # time.sleep(0.1)
+        yield from asyncio.sleep(0.001)
+
+@asyncio.coroutine
+def cancel_travel_task(travel_task):
+    global enemy
+    flag = True
+    while True:
+        if 0 <  len(enemy):
+            if flag:
+                flag = False
+                travel_task.cancel()
+        yield from asyncio.sleep(0.001)
+
+
+@asyncio.coroutine
+def loop_attack ():
+    global enemy
+    global moving_object
+    while True:
+        #yield from loop_find_moving_objects()   # update moving_object
+        if 0 < len(enemy):  # 敵と遭遇した
+            '''
+            for monster in enemy:
+                print("★attack monster at ", monster) 
+                click( monster[0], monster[1] ) 
+                yield from asyncio.sleep(0.001)
+            ''' 
+            if 0 < len( moving_object ):
+                for obj in moving_object:
+                    MoveMouse(obj[0], obj[1]) 
+                    if is_enemy():
+                        enemy.append( obj ) 
+                        print("★attack monster at ", monster) 
+                        click( monster[0], monster[1] ) 
+                        yield from asyncio.sleep(0.001)
+        yield from asyncio.sleep(0.001)

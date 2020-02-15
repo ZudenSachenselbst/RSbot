@@ -424,3 +424,8 @@ def is_inside(a,b): # view x,y
     else:
         return False
 
+def getMousePos():
+    return getCursorPos()
+def getCursorPos():
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    return out[2]   # (x,y)
