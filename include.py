@@ -14,6 +14,11 @@ from globals import *
 
 ################
 
+import asyncio
+import itertools
+
+################
+
 # 以下は basics.py に移動
 '''
 def click(x,y, duration=0.1):
@@ -1180,7 +1185,8 @@ def map_locate( file ):
     cv2.imshow('map2', resized_img)
     #cv2.moveWindow("map2", 1200,40)
     cv2.moveWindow("map2", 1000,40)
-    cv2.waitKey(100)
+    #cv2.waitKey(100)
+    cv2.waitKey(10)
 
 
 def is_vicinity( p, q, offset=10): # not used
@@ -1227,6 +1233,7 @@ def pixel2pos(x,y): # pixel x,y
 def pixel2view(x,y):    # pixel x,y
     return (x*23, y*23)
 
+@asyncio.coroutine
 def goto_object(name): 
     # 現在のマップや別のマップの人物やオブジェクトのところへ移動する。
     global status
@@ -1238,7 +1245,9 @@ def goto_object(name):
         if   from_type == "map" and to_type == "map":
             mapname = from_name
             initialize2(mapname)   # 新しいmap に入った時点ですること
-            result = goto_pixel( x, y) 
+            #result = goto_pixel( x, y) 
+            #t1 = asyncio.async( goto_pixel( x, y) )
+            result = yield from goto_pixel( x, y) 
             if result:
                 click_gate()
                 time.sleep(5)
@@ -1250,7 +1259,8 @@ def goto_object(name):
             mapname = from_name
             character_name = to_name
             initialize2(mapname)   # 新しいmap に入った時点ですること
-            result = goto_pixel( x, y) 
+            #result = goto_pixel( x, y) 
+            result = yield from  goto_pixel( x, y) 
             if result:
                 #click_object(character_name) 
                 click_NPC(character_name) 
@@ -1264,8 +1274,9 @@ def goto_object(name):
                 # func(arg1, arg2, arg3)
                 globals()[func](arg1, arg2, arg3)
 
-
+@asyncio.coroutine
 def goto_pixel(x,y):  # pixel x,y
+    print("●entered goto_pixel")
     # 現在のマップの特定の pixel 位置に移動する。
     goal = (x,y)    # pixel coordinate
     cx,cy = getPositionNew()
@@ -1301,6 +1312,7 @@ def goto_pixel(x,y):  # pixel x,y
         
 
         my_status = move_to( xx,yy ) 
+        yield from asyncio.sleep(0.001)
 
         try_count = 0
         while not my_status:
@@ -2007,7 +2019,8 @@ def move_to(x,y):   #position x,y
 def is_NPC():
     out = win32gui.GetCursorInfo()
     #print("cusorType=", out)
-    if out[1] == 459311:
+    # if out[1] == 459311:
+    if out[1] == 459311 or out[1] == 2163225 or out[1] == 262673:
         print("find NPC")
         return True
     else:
@@ -2021,7 +2034,7 @@ def is_enemy():
     out = win32gui.GetCursorInfo()
     #print("cusorType=", out)
     #if out[1] == 8258077:
-    if out[1] == 8258077 or out[1] == 197189:
+    if out[1] == 8258077 or out[1] == 197189 or out[1] == 328203 :
         print("find enemy")
         return True
     else:
@@ -2337,4 +2350,26 @@ def op総合ポータル( scroll_count, x, y ):
     time.sleep(1.0)
     click(353,353)  # **に移動します。ポータル利用料 1万gold 「はい」
 
+##################
+
+
+@asyncio.coroutine
+def loop_update_status():
+    global status
+    #while True:
+    for i in range(10000):
+        if i % 3 == 0:
+            getHP()
+            getCPNew()
+            update_enchanted_status()
+            if not status["enchanted"]["haste"][0]: # haste が切れている           
+                print(">>>haste")
+                clickCenter()
+                PressKey( DIK_W ) 
+                time.sleep(0.01)
+                ReleaseKey(DIK_W)
+                time.sleep(0.01)
+
+            # getPositionNew()
+        yield from asyncio.sleep(0.001)
 

@@ -256,7 +256,10 @@ def check_enchanted_status(img_arg, template_arg, method = cv2.TM_CCORR_NORMED):
     return max_val
 
 
+
+
 def update_enchanted_status():
+    print("■entered update_enchanted_status")
 
     start = datetime.datetime.now()
 
