@@ -292,11 +292,21 @@ def show_around_city(city_name, radius=4):
         # my_print(  edge )
         _from, _to = edge
         if G.nodes[_to]["type"] == "map":
-            area = G.edges[_from, _to]["Area"]
-            x,y =  G.edges[_from, _to]["Pos"]
+            # area = G.edges[_from, _to]["Area"]
+            area = ""
+            if 'Area' in G.edges[_from, _to]:
+                area = G.edges[_from, _to]["Area"]
+            x = ""
+            y = ""
+            if "Pos" in G.node[_to]:
+                x,y =  G.edges[_from, _to]["Pos"]
             print(  "%s → (%s[%s,%s]) → %s" % (_from, area, x, y, _to ) ) 
         else:
-            x,y =  G.node[_to]["Pos"]
+            # x,y =  G.node[_to]["Pos"]
+            x = ""
+            y = ""
+            if "Pos" in G.node[_to]:
+                x,y =  G.node[_to]["Pos"]
             print(  "%s → %s[%s,%s]" % (_from, _to, x, y ) )
 
     # pprint(  G2.edges() )

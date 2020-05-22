@@ -74,10 +74,13 @@ status = {
 
 ###############
 # 敵関係
+from simple_object_tracking.pyimagesearch.centroidtracker import CentroidTracker
+ct = CentroidTracker(3)    # maxDisappeared=5 frame
 
 moving_object = []
 enemy = []
-
+#phase = "travel"
+phase = "battle"
 
 ###############
 # icon 関連
@@ -104,28 +107,8 @@ center_pos = (400,244)
 mapaname_list_normalized = []
 
 
-def circle_around(point, r=1):
-    x, y = point
-    i, j = x-r, y-r
-    while True:
-        while i < x+r:
-            i += r
-            yield r, (i, j)
-        while j < y+r:
-            j += r
-            yield r, (i, j)
-        while i > x-r:
-            i -= r
-            yield r, (i, j)
-        while j > y-r:
-            j -= r
-            yield r, (i, j)
-        r += r
-        j -= r
-        yield r, (i, j)
-
-
 chat_area = [1,467, 149-1,490-467]
 player_area = [360,146,444-360,292-146 ]
 coordinate_area = [599,0,  799 - 599, 22]
+message_point = (20,20)
 

@@ -16,6 +16,7 @@ from globals import *
 
 import asyncio
 import itertools
+from copy import deepcopy
 
 ################
 
@@ -1315,7 +1316,7 @@ def goto_pixel(x,y):  # pixel x,y
         vec2 = ( -1 * vec[1], vec[0] ) # orthogonal to vector
         
 
-        my_status = move_to( xx,yy ) 
+        my_status = yield from move_to( xx,yy ) 
         yield from asyncio.sleep(0.001)
 
         try_count = 0
@@ -1326,7 +1327,7 @@ def goto_pixel(x,y):  # pixel x,y
 
             # とりあえず１つ前のwaypoint にもどる　
 
-            move_to( prev_xx,prev_yy ) 
+            yield from move_to( prev_xx,prev_yy ) 
 
             # 障害物から離れる方向に移動する
             # だんだん大きく離れる
@@ -1336,22 +1337,22 @@ def goto_pixel(x,y):  # pixel x,y
                 print( "avoid obstacle: direction=", vec1 ) 
                 # 少し戻る
                 for i in range( int((try_count+1)/2) ):
-                    move_toward( qx + 10 * vecr[0], qy + 10 * vecr[1] ) 
+                    yield from move_toward( qx + 10 * vecr[0], qy + 10 * vecr[1] ) 
                     time.sleep(1.0) 
                 for i in range( int((try_count+1)/2) ):
-                    move_toward( qx + 10 * vec1[0], qy + 10 * vec1[1] ) 
+                    yield from move_toward( qx + 10 * vec1[0], qy + 10 * vec1[1] ) 
                     time.sleep(1.0) 
             else:
                 print( "avoid obstacle: direction=", vec2 ) 
                 # 少し戻る
                 for i in range( int((try_count+1)/2) ):
-                    move_toward( qx + 10 * vecr[0], qy + 10 * vecr[1] ) 
+                    yield from move_toward( qx + 10 * vecr[0], qy + 10 * vecr[1] ) 
                     time.sleep( 1.0) 
                 for i in range( int((try_count+1)/2) ):
-                    move_toward( qx + 10 * vec2[0], qy + 10 * vec2[1] ) 
+                    yield from move_toward( qx + 10 * vec2[0], qy + 10 * vec2[1] ) 
                     time.sleep(1.0) 
 
-            my_status = move_to( xx,yy ) 
+            my_status = yield from move_to( xx,yy ) 
         if my_status:
             print( "reached waypoint(%d)  %d,%d" % (i, bx,by) )
         else:
@@ -1472,7 +1473,7 @@ def find_path(file, start, goal, retry=False):   # pixel x,y
     # その場合は出発地、目的地を近傍の blank 地点に変更する。
 
     '''
-    # globals.py に移動
+    # basics.py に移動
     def circle_around(point):
         x, y = point
         r = 1
@@ -1971,7 +1972,8 @@ def click_NPC(name):   # pixel x,y
 
 
 
-def move_toward(x,y):   #position x,y
+@asyncio.coroutine
+def move_toward(x,y, is_async=True ):   #position x,y
     if is_reached(x,y):
         return
 
@@ -1996,6 +1998,8 @@ def move_toward(x,y):   #position x,y
         bx = nx + int(radius * a/c)
         by = ny + int(radius * b/c)
         # print("checking %d,%d" % (bx,by) ) 
+        if is_async:
+            yield from asyncio.sleep(0.01)
         MoveMouse(bx, by) 
         time.sleep(0.1)
         #if is_enemy() or is_roten():
@@ -2007,12 +2011,13 @@ def move_toward(x,y):   #position x,y
             break
 
 
+@asyncio.coroutine
 def move_to(x,y):   #position x,y
     #for i in range(100): 
     #while True:
     #for i in range(10):
     for i in range(5):
-        move_toward(x,y)
+        yield from move_toward(x,y)
         map_locate("path.png")
         time.sleep(0.5) 
         if is_reached(x,y):
@@ -2031,7 +2036,7 @@ def setCursorNormal():
     out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
     cursor["normal"] = out[1]
 
-def getCursor():
+def getCursorType():
     global cursor
 
     out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
@@ -2068,7 +2073,7 @@ def getCursor():
 
 
 def is_NPC():
-    if getCursor() == "NPC":
+    if getCursorType() == "NPC":
         return True
     else:
         return False
@@ -2076,14 +2081,19 @@ def is_NPC():
 
 def is_enemy():
     global enemy
-    if getCursor() == "enemy":
-        enemy.append(  getMousePos() ) 
+    global phase
+    if getCursorType() == "enemy":
+        #enemy.append(  getMousePos() ) 
+        x,y = getMousePos()
+        enemy.append( [x,y] ) 
+        phase = "battle"
+        print("phase to battle")
         return True
     else:
         return False
 
 def is_roten():
-    if getCursor() == "roten":
+    if getCursorType() == "roten":
         return True
     else:
         return False
@@ -2285,7 +2295,22 @@ def RSlogin():
     click(449,352) 
     time.sleep(1.0)
     click(449,352) 
-    
+
+
+#fig = cv2.imread("img/途中.bmp")
+#fig = cv2.cvtColor(fig, cv2.COLOR_BGR2GRAY)
+#_thre, fig = cv2.threshold(fig, 127, 255, cv2.THRESH_BINARY ) 
+#途中 = np.array(fig)
+
+def is_obstacle():
+    sc1 = pyautogui.screenshot( region=(275,147,32,21) ) 
+    if pyautogui.locateOnScreen( "img/途中.bmp", grayscale=True, region=(275,147,32,21 ),confidence=0.9):
+        return True
+    else:
+        return False
+
+
+
 #####################
 
 
@@ -2319,6 +2344,7 @@ def initialize2(mapname):
 
 
 def initialize():
+    print("entered initialize")
     os.chdir("z:\\")
     global status
     # RS window の位置の調整
@@ -2401,6 +2427,7 @@ def loop_update_status():
             getHP()
             getCPNew()
             update_enchanted_status()
+            '''
             if not status["enchanted"]["haste"][0]: # haste が切れている           
                 if status["where"] != "gate":
                     print(">>>haste")
@@ -2411,9 +2438,11 @@ def loop_update_status():
                     ReleaseKey(DIK_W)
                     time.sleep(0.01)
                     MoveMouse(orgX, orgY)   # 元の位置にマウスを戻す
+            '''
 
             # getPositionNew()
-        yield from asyncio.sleep(0.001)
+        #yield from asyncio.sleep(0.001)
+        yield from asyncio.sleep(0.1)
 
 @asyncio.coroutine
 def loop_dummy():
@@ -2423,36 +2452,59 @@ def loop_dummy():
         yield from asyncio.sleep(0.001)
 
 @asyncio.coroutine
-def cancel_travel_task(travel_task):
+def control_task(task_travel):
+    global phase
     global enemy
     flag = True
     while True:
-        if 0 <  len(enemy):
-            if flag:
-                flag = False
-                travel_task.cancel()
-        yield from asyncio.sleep(0.001)
+        #print("△enemy=", enemy)
+        #if  0 < len(enemy):
+        #    phase = "battle"
+        if flag and phase == "battle":
+            flag = False
+            print("cancel task_travel")
+            task_travel.cancel()
+        #yield from asyncio.sleep(0.001)
+        yield from asyncio.sleep(0.01)   # check は0.1秒間隔
 
 
 @asyncio.coroutine
 def loop_attack ():
+    global phase
     global enemy
     global moving_object
     while True:
-        #yield from loop_find_moving_objects()   # update moving_object
-        if 0 < len(enemy):  # 敵と遭遇した
-            '''
-            for monster in enemy:
-                print("★attack monster at ", monster) 
-                click( monster[0], monster[1] ) 
-                yield from asyncio.sleep(0.001)
-            ''' 
-            if 0 < len( moving_object ):
-                for obj in moving_object:
-                    MoveMouse(obj[0], obj[1]) 
-                    if is_enemy():
-                        enemy.append( obj ) 
-                        print("★attack monster at ", monster) 
-                        click( monster[0], monster[1] ) 
-                        yield from asyncio.sleep(0.001)
-        yield from asyncio.sleep(0.001)
+        print("phase=", phase)
+        print("moving_object=", moving_object)
+        if phase == 'battle':
+            # find_moving_object の更新に影響されなくする。
+            current_moving_object = deepcopy( moving_object )
+            for obj in current_moving_object:
+                print("checking moving_object:", obj )
+                xx, yy = object_center(obj)
+
+                (orgX, orgY) = getCursorPos()
+                MoveMouse(xx,yy)
+                time.sleep(0.01)
+                result = is_enemy()
+                if result:
+                    print("★found enemy")
+                else:
+                    print("not enemy")
+
+                MoveMouse(orgX, orgY)   # 人手操作の便宜のため元の位置にマウスを戻す
+
+                if result:
+                    #enemy.append( obj ) 
+                    # yield from move_toward( xx, yy )
+                    move_toward( xx, yy )
+                    # task スイッチさせない
+                    print("★attack monster at ", obj ) 
+                    click( xx, yy ) 
+                    time.sleep(0.01)
+                # yield from asyncio.sleep(0.01)
+        #yield from asyncio.sleep(0.001)
+        yield from asyncio.sleep(0.01)
+
+
+

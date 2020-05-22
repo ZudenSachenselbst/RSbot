@@ -16,6 +16,8 @@ import pyautogui
 import cv2
 import numpy as np
 
+from copy import deepcopy
+
 from globals import *
 from basics import *
 #from include import *
@@ -25,6 +27,9 @@ from basics import *
 # frame差分を取る前に並行移動量を調べて compensate する。
 # python - How to detect a shift between images - Stack Overflow https://stackoverflow.com/questions/24768222/how-to-detect-a-shift-between-images
 
+#from simple_object_tracking.pyimagesearch.centroidtracker import CentroidTracker
+#ct = CentroidTracker()
+#ct = CentroidTracker(10)    # maxDisappeared=10 frame
 
 
 def cross_image(im1, im2):
@@ -123,18 +128,19 @@ def loop_find_moving_objects():
 @asyncio.coroutine
 def find_moving_objects():
 
+    global moving_object
     # カメラのキャプチャ
 
     sc1 = pyautogui.screenshot( region=(0,0,800, 495) )
     frame1 = cv2.cvtColor(np.array(sc1), cv2.COLOR_RGB2GRAY)
     #time.sleep(0.01)
-    yield from asyncio.sleep(0.001)
+    yield from asyncio.sleep(1.0)
 
 
     sc2 = pyautogui.screenshot( region=(0,0,800, 495) )
     src = np.array(sc2)
     frame2 = cv2.cvtColor(np.array(sc2), cv2.COLOR_RGB2GRAY)
-    yield from asyncio.sleep(0.001)
+    yield from asyncio.sleep(1.0)
 
     sc3 = pyautogui.screenshot( region=(0,0,800, 495) )
     frame3 = cv2.cvtColor(np.array(sc3), cv2.COLOR_RGB2GRAY)
@@ -143,7 +149,7 @@ def find_moving_objects():
     detect_count = 0
     moving_objects = []
 
-    for t in range(100):
+    for t in range(10000):
 
 
 
@@ -185,15 +191,21 @@ def find_moving_objects():
                 continue
             if 1e5 < area:
                 continue
-           
+       
+
             # 外接矩形
             if len(contours[i]) > 0:
                 rect = contours[i]
                 x, y, w, h = cv2.boundingRect(rect)
-            
+           
+                # 極端に横長のものも排除
+                if 200 < w:
+                    continue
+
                 global chat_area
                 global player_area
-                if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ) or is_inside( coordinate_area, [x,y,w,h ] ):
+                global message_point
+                if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ) or is_inside( coordinate_area, [x,y,w,h ] ) or is_in( message_point, [x,y,w,h])  :
                     continue
                 moving_objects.append( [x,y,w,h ] ) 
                 cv2.rectangle(src, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -203,18 +215,38 @@ def find_moving_objects():
                
                 detect_count = detect_count + 1
 
-        global moving_object
-        moving_object = moving_objects
+        #global moving_object
+        moving_object.clear()
+        # moving_object.extend( moving_objects )
+        moving_object.extend( deepcopy( moving_objects )  )
+        #print("□moving_object=", moving_object)
+
+        rects = [ (x,y,x+w,y+h) for (x,y,w,h) in moving_objects ] 
+
+        global ct
+        objects = ct.update(rects)
+
+        # loop over the tracked objects
+        for (objectID, centroid) in objects.items():
+            # draw both the ID of the object and the centroid of the
+            # object on the output frame
+            text = "ID {}".format(objectID)
+            cv2.putText(src, text, (centroid[0] - 10, centroid[1] - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            cv2.circle(src, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)
+
 
         # 外接矩形された画像を表示
         cv2.imshow('output', src)
         cv2.moveWindow("output", 1100,120)
         cv2.waitKey(100)
-        yield from asyncio.sleep(0.001)
+        #yield from asyncio.sleep(0.001)
+        yield from asyncio.sleep(1.0)  
+        #yield from asyncio.sleep(0.01)  
 
         print( "detect %d moving object" % (detect_count ), flush=True )
 
-
+            
 
         # 3枚のフレームを更新
         frame1 = frame2
