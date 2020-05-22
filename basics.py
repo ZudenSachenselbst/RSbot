@@ -415,14 +415,52 @@ def closeMap():
 #################
 
 
+def circle_around(point, r=1):
+    x, y = point
+    i, j = x-r, y-r
+    while True:
+        while i < x+r:
+            i += r
+            yield r, (i, j)
+        while j < y+r:
+            j += r
+            yield r, (i, j)
+        while i > x-r:
+            i -= r
+            yield r, (i, j)
+        while j > y-r:
+            j -= r
+            yield r, (i, j)
+        r += r
+        j -= r
+        yield r, (i, j)
+
+
 def is_inside(a,b): # view x,y
     [ax,ay,aw,ah] = a
     [bx,by,bw,bh] = b
 
     if  ax <= bx and  bx + bw <= ax + aw  and ay <= by and by+bh <= ay+ah :
+        # b is subset of a
         return True
     else:
         return False
+
+
+def is_in(b,a): # view x,y
+    [bx,by] = b
+    [ax,ay,aw,ah] = a
+
+    if  ax <= bx and  bx <= ax + aw  and ay <= by and by <= ay+ah :
+        # point b is included in a
+        return True
+    else:
+        return False
+
+def object_center(a):
+    [ax,ay,aw,ah] = a
+    return ( ax + aw/2, ay + ah/2 )
+
 
 def getMousePos():
     return getCursorPos()
