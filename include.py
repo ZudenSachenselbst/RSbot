@@ -607,11 +607,13 @@ def getHP():
 
     # focusRS()
     #click(410,560, 1.0)
+    (orgX, orgY) = getMousePos()
     click(410,560) 
 
     # sc1 = pyautogui.screenshot( region=(0,0,800, 20) )
     sc1 = pyautogui.screenshot( region=( 353, 547, 60, 20 ) ) 
     # pyautogui.screenshot( "sc.png",  region=( 353, 547, 60, 20 ) ) 
+    MoveMouse(orgX, orgY)   # マウス位置を元に戻す。
 
     gray = np.array(sc1)
     gray = cv2.cvtColor(gray, cv2.COLOR_BGR2GRAY)
@@ -1266,6 +1268,7 @@ def goto_object(name):
 
 
 def goto_pixel(x,y):  # pixel x,y
+    print("●entered goto_pixel")
     # 現在のマップの特定の pixel 位置に移動する。
     goal = (x,y)    # pixel coordinate
     cx,cy = getPositionNew()
@@ -2004,11 +2007,55 @@ def move_to(x,y):   #position x,y
             return True
     return False
 
+############################
+# cursor 関係
+
+def setCursorNormal():
+    global cursor
+    focusRS()
+    clickCenter()
+    time.sleep(0.1)
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    cursor["normal"] = out[1]
+
+def getCursor():
+    global cursor
+
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    if out[1] ==cursor["normal"]:
+        #print("normal")
+        return "normal"
+    if 0 <= cursor["enemy"] and out[1] ==cursor["enemy"]:
+        #print("enemy")
+        return("enemy")
+    if 0 <= cursor["NPC"] and out[1] ==cursor["NPC"]:
+        #print("NPC")
+        return("NPC")
+    if 0 <= cursor["roten"] and out[1] ==cursor["roten"]:
+        #print("roten")
+        return("roten")
+
+    info = win32gui.GetIconInfo( out[1] ) 
+    print(info)
+
+    if info[1] == 9:    # NPC 
+        cursor["NPC"] = out[1]
+        #print("NPC")
+        return("NPC")
+
+    if info[1] == 1:    # roten 
+        cursor["roten"] = out[1]
+        #print("roten")
+        return("roten")
+
+    # enemy
+    cursor["enemy"] = out[1]
+    #print("enemy")
+    return("enemy")
+
+
 def is_NPC():
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    if out[1] == 459311:
-        print("find NPC")
+    if getCursor() == "NPC":
         return True
     else:
         return False
@@ -2016,25 +2063,19 @@ def is_NPC():
 
 
 def is_enemy():
-    #x, y = pyautogui.position()
-    # time.sleep(0.1)
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    #if out[1] == 8258077:
-    if out[1] == 8258077 or out[1] == 197189:
-        print("find enemy")
+    global enemy
+    global phase
+    if getCursor() == "enemy":
+        #enemy.append(  getMousePos() ) 
+        x,y = getMousePos()
+        enemy.append( [x,y] ) 
+        phase = "battle"
         return True
     else:
         return False
 
 def is_roten():
-    #x, y = pyautogui.position()
-    #time.sleep(0.1)
-    out = win32gui.GetCursorInfo()
-    #print("cusorType=", out)
-    #if out[1] == 1376837:
-    if out[1] == 1376837 or out[1] == 66127:
-        print("find roten")
+    if getCursor() == "roten":
         return True
     else:
         return False
@@ -2075,7 +2116,8 @@ def adjustRSWindow():
     # MoveWindow(ウィンドウハンドル, x座標, y座標, 横幅, 縦幅, 再描画するか)
 
     #(3,22) が (0,0) に来るようにする
-    win32gui.MoveWindow(handle,-3,-22,800 + 6 ,600 + 22 , 1)
+    #win32gui.MoveWindow(handle,-3,-22,800 + 6 ,600 + 22 , 1)
+    win32gui.MoveWindow(handle,-8,-30, 800 + 6 ,600 + 22 , 1)
 
 def resetRSWindow():
     # 元の位置に戻す
@@ -2259,6 +2301,7 @@ def initialize2(mapname):
     #getCP()
     getCPNew()
     getHP()
+    setCursorNormal()
     getPositionNew()
     #prepare_world_map()
     #load_map_pos2pixel()
@@ -2268,6 +2311,7 @@ def initialize2(mapname):
 
 
 def initialize():
+    print("entered initialize")
     os.chdir("z:\\")
     global status
     # RS window の位置の調整
@@ -2319,6 +2363,7 @@ def initialize():
     #getCP()
     getCPNew()
     getHP()
+    setCursorNormal()
     getPositionNew()
     #load_map_pos2pixel()
     update_map_pos2pixel()

@@ -420,7 +420,29 @@ def is_inside(a,b): # view x,y
     [bx,by,bw,bh] = b
 
     if  ax <= bx and  bx + bw <= ax + aw  and ay <= by and by+bh <= ay+ah :
+        # b is subset of a
         return True
     else:
         return False
 
+
+def is_in(a,b): # view x,y
+    [ax,ay,aw,ah] = a
+    [bx,by] = b
+
+    if  ax <= bx and  bx <= ax + aw  and ay <= by and by <= ay+ah :
+        # point b is included in a
+        return True
+    else:
+        return False
+
+def object_center(a):
+    [ax,ay,aw,ah] = a
+    return ( ax + aw/2, ay + ah/2 )
+
+
+def getMousePos():
+    return getCursorPos()
+def getCursorPos():
+    out = win32gui.GetCursorInfo()  # flags, hcursor, (x,y) = GetCursorInfo()
+    return out[2]   # (x,y)

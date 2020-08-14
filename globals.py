@@ -66,8 +66,30 @@ status = {
     "currentHP" : -1 ,
     "fullHP"    : -1 ,
 
-    "enchanted"  : {}
+    "enchanted"  : {}, 
+
+    "where":""  # onGate など
+
     } 
+
+###############
+# 敵関係
+
+moving_object = []
+enemy = []
+phase = "travel"
+
+###############
+# icon 関連
+# 通常カーソルアイコン、敵カーソルアイコン、NPCカーソルアイコンへのポインタ
+# RS 実行毎に変化する
+# initialize() 時および敵/NPC遭遇時に更新する。
+cursor = { 
+    "normal":-1,
+    "enemy":-1,
+    "NPC":-1,
+    "roten":-1
+    }
 
 ###############
 #
@@ -105,4 +127,5 @@ def circle_around(point, r=1):
 
 chat_area = [1,467, 149-1,490-467]
 player_area = [360,146,444-360,292-146 ]
+coordinate_area = [599,0,  799 - 599, 22]
 
