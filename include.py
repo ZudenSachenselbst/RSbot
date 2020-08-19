@@ -5,7 +5,7 @@ from basics import *
 from redstone_map import *
 from skill import *
 from redstone_map import *
-from vision import *
+#from vision import *
 
 
 ################
@@ -1195,6 +1195,10 @@ def is_vicinity( p, q, offset=10): # not used
     else:
         return False
 
+def pos2pixel_new(pos):
+    out0, out1 = pos2pixel(pos[0], pos[1] )
+    return (out0, out1) 
+
 def pos2pixel(x,y): # position x,y
     global status
 
@@ -1224,7 +1228,9 @@ def pixel2pos(x,y): # pixel x,y
 
 
 
-
+def pixel2view_new(pixel):
+    out0, out1 = pixel2view(pixel[0], pixel[1] ) 
+    return (out0, out1) 
 
 def pixel2view(x,y):    # pixel x,y
     return (x*23, y*23)
