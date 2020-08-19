@@ -20,13 +20,14 @@ map_skill2icon = {
     "mysticFog":       [ "iconSkill/iconSkill_56.png", 0.9, ""],
     "chillingTouch":   [ "iconSkill/iconSkill_57.png", 0.9, ""],
     "iceStaglamite":   [ "iconSkill/iconSkill_58.png", 0.95, "Effects/skill_icy_stalagmite/skill_icy_stalagmite_9.bmp"], 
-    "fountainBarrier": [ "iconSkill/iconSkill_59.png", 0.93, "Effects/status_incline/skill_11.bmp"], 
+    "fountainBarrier": [ "iconSkill/iconSkill_59.png", 0.97, "Effects/20200815/fountainBarrier.bmp"], 
     "waterCannon":     [ "iconSkill/iconSkill_60.png", 0.9, ""],
     "levitate":        [ "iconSkill/iconSkill_61.png", 0.9, ""],
     "teleportation":   [ "iconSkill/iconSkill_62.png", 0.9, ""],
     "tornadoShield":   [ "iconSkill/iconSkill_63.png", 0.9, ""],
     "lightningThunder":[ "iconSkill/iconSkill_64.png", 0.9, ""],
-    "haste":           [ "iconSkill/iconSkill_65.png", 0.8, "Effects/status_incline/status_incline_7.png"],     # 移動速度
+    "haste":           [ "iconSkill/iconSkill_65.png", 0.95, "Effects/20200815/haste2.bmp"],     # 移動速度
+#    "haste":           [ "iconSkill/iconSkill_65.png", 0.8, "Effects/status_incline/status_incline_7.png"],     # 移動速度
     #"haste":           [ "iconSkill/iconSkill_65.png", 0.9, "Effects/status_incline/status_incline_5.png"],    # 攻撃速度
     "rockBounding":    [ "iconSkill/iconSkill_66.png", 0.9, ""],
     "gravityAmplifier":[ "iconSkill/iconSkill_67.png", 0.9, ""],
@@ -35,9 +36,10 @@ map_skill2icon = {
     "stoneTouch":      [ "iconSkill/iconSkill_70.png", 0.9, ""],
     "charging":        [ "iconSkill/iconSkill_71.png", 0.9, ""],
     "doubleCharging":  [ "iconSkill/iconSkill_72.png", 0.9, ""],
-    "turkeyCharging":  [ "iconSkill/iconSkill_73.png", 0.9, ""],
+    "turkeyCharging":  [ "iconSkill/iconSkill_73.png", 0.97, "Effects/20200815/turkeyCharging.bmp"],
     # "forbegerCharging":[ "iconSkill/iconSkill_74.png", 0.9, "Effects/status_incline/status_incline_6.png"],     
-    "forbegerCharging":[ "iconSkill/iconSkill_74.png", 0.93, "Effects/status_incline/skill_15.bmp"], 
+    # "forbegerCharging":[ "iconSkill/iconSkill_74.png", 0.93, "Effects/status_incline/skill_15.bmp"], 
+    "forbegerCharging":[ "iconSkill/iconSkill_74.png", 0.97, "Effects/20200815/forbegerCharging.bmp"], 
     "criticalHit":     [ "iconSkill/iconSkill_75.png", 0.9, ""]
 
         }
