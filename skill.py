@@ -179,6 +179,24 @@ def reset_wizard_skill_slot():
 
 ################
 
+
+def hasteMe():
+    
+    clickCenter(0.01) 
+    #time.sleep(0.1)
+    x = eval( "DIK_W" ) 
+    PressKey(x)
+    time.sleep(0.01)
+    ReleaseKey(x)
+    # time.sleep(0.1)
+
+def healMe():
+    global center_pos
+    x,y = center_pos
+    clickRightButton( x,y ) 
+
+################
+
 # 各種スキルの効果中か判定する
 
 def check_enchanted(imageFile, skillname, method = cv2.TM_CCORR_NORMED):
@@ -277,12 +295,14 @@ def update_enchanted_status():
 
     global map_skill2icon
     for skill in map_skill2icon: 
+        # print("checking1 ", skill, len(map_skill2icon[skill]) )
         if len( map_skill2icon[skill]) == 4: # memory image 有り
             #effect = map_skill2icon[skill][2]
             #effect = map_skill2icon[skill][3]
             effect = skill2image(skill) 
             thres  = skill2thres(skill) 
 
+            # print("checking2 ", skill )
             val = check_enchanted_status( bgr,  effect )
             if val > thres:
                 status["enchanted"][skill] = [ True, val] 
