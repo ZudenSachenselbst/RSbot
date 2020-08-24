@@ -387,6 +387,13 @@ def click(x,y, duration=0.1):
     MoveMouse(x,y, M_LEFTUP)
     time.sleep(duration)
 
+def clickRightButton(x,y, duration=0.1):
+    MoveMouse(x,y, M_RIGHTDOWN)
+    time.sleep(duration)
+    MoveMouse(x,y, M_RIGHTUP)
+    time.sleep(duration)
+
+
 def click2(x,y, duration=0.1):
     MoveMouse(x,y)
     time.sleep(duration)
