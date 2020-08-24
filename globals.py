@@ -68,14 +68,15 @@ status = {
 
     "enchanted"  : {}, 
 
-    "where":""  # onGate など
+    "where":"",     # "initializing", "gate" など
+    "shift":None    # 直前の移動vector 
 
     } 
 
 ###############
 # 敵関係
 
-moving_object = []
+moving_objects = []
 enemy = []
 phase = "travel"
 
@@ -100,32 +101,13 @@ center_pos = (400,244)
 #center_pos = (360,200)
 #center_pos = (400,200)
 #center_pos = (340,200)
+center_area = ( 400, 244, 400+2, 244+2) 
 
 mapaname_list_normalized = []
-
-
-def circle_around(point, r=1):
-    x, y = point
-    i, j = x-r, y-r
-    while True:
-        while i < x+r:
-            i += r
-            yield r, (i, j)
-        while j < y+r:
-            j += r
-            yield r, (i, j)
-        while i > x-r:
-            i -= r
-            yield r, (i, j)
-        while j > y-r:
-            j -= r
-            yield r, (i, j)
-        r += r
-        j -= r
-        yield r, (i, j)
 
 
 chat_area = [1,467, 149-1,490-467]
 player_area = [360,146,444-360,292-146 ]
 coordinate_area = [599,0,  799 - 599, 22]
+info_area = [ 599,0,799-599, 153 ]
 
