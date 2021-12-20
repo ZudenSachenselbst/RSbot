@@ -216,6 +216,8 @@ PythonとOpenCVを使って物体検出をやってみた - Qiita https://qiita.
 import datetime
 def calc_shift (fig1, fig2):
 
+    debug = False
+
     start = datetime.datetime.now()
     # fig1 からテンプレートとする中心周辺の画像を４つ切り出す
 
@@ -248,6 +250,7 @@ def calc_shift (fig1, fig2):
 
     for template_cand in templates:
 
+
         x = template_cand["x"]
         y = template_cand["y"]
 
@@ -276,31 +279,26 @@ def calc_shift (fig1, fig2):
 
 
         shift = (shift_x, shift_y)
-        print("max_val=", max_val, "shift=", shift ) 
+        if debug:
+            print("max_val=", max_val, "shift=", shift ) 
 
         if 0.99 < max_val:
-            print("return max_val=", max_val, "shift=", shift ) 
+            if debug:
+                print("return max_val=", max_val, "shift=", shift ) 
             break
 
     end = datetime.datetime.now()
     elapse = end - start
-    print("calc_shift",  elapse ) 
+    if debug:
+        print("calc_shift",  elapse ) 
    
     return shift
 
 ################################
 
 sc1     = None
-sc1_gray= None
-sc1_bgr = None
-
 sc2     = None
-sc2_gray= None
-sc2_bgr = None
 
-sc3     = None
-sc3_gray= None
-sc3_bgr = None
 
 
 def find_moving_objects_while_moving():
@@ -308,6 +306,10 @@ def find_moving_objects_while_moving():
     # 0.1 秒間隔程度で呼び出すこと
     # カメラのキャプチャ
 
+    #debug = True
+    debug = False
+
+    global status
     global sc1, sc2
     #global sc1_gray, sc2_gray, sc3_gray
     #global sc1_bgr, sc2_bgr, sc3_bgr
@@ -329,12 +331,14 @@ def find_moving_objects_while_moving():
     sc2_bgr  = cv2.cvtColor(sc2, cv2.COLOR_RGB2BGR)
 
 
-    detect_count = 0
-    moving_objects = []
+    #detect_count = 0
+    #moving_objects = []
 
 
     shift = calc_shift( sc2_bgr, sc1_bgr ) 
-    print( "shift=", shift ) 
+    status["shift"] = shift
+    if debug:
+        print( "shift=", shift ) 
 
     sc1_gray_shifted = shift_image(sc1_gray, shift ) 
 
@@ -347,17 +351,19 @@ def find_moving_objects_while_moving():
     #frame1_trimmed  = sc1_gray_shifted[    50:495-50,100:700]
     #frame2_trimmed  = sc2_gray[            50:495-50,100:700]
 
+    '''
     sc1_gray_tmp = np.copy(  sc1_gray_shifted ) 
     sc2_gray_tmp = np.copy(  sc2_gray ) 
     frame1_trimmed  = sc1_gray_tmp[  50:495-50,100:700]
     frame2_trimmed  = sc2_gray_tmp[  50:495-50,100:700]
+    '''
 
+    frame1_trimmed  = sc1_gray_shifted
+    frame2_trimmed  = sc2_gray
 
     #src = np.copy(  frame2_trimmed )
     src = frame2_trimmed 
 
-    #debug = True
-    debug = False
 
     if debug: 
         a = datetime.datetime.now()
@@ -384,7 +390,9 @@ def find_moving_objects_while_moving():
 
     # 矩形検出された数（デフォルトで0を指定）
     detect_count = 0
-    moving_objects = []
+    global moving_objects
+    # moving_objects = []
+    moving_objects.clear() 
 
     # 各輪郭に対する処理
     for i in range(0, len(contours)):
@@ -400,7 +408,10 @@ def find_moving_objects_while_moving():
             continue
         if 1e5 < area:
             continue
-       
+    
+        # 横長すぎるものも除外
+
+
         # 外接矩形
         if len(contours[i]) > 0:
             rect = contours[i]
@@ -408,7 +419,12 @@ def find_moving_objects_while_moving():
         
             global chat_area
             global player_area
-            if is_inside( chat_area, [x,y,w,h ]) or is_inside( player_area, [x,y,w,h ] ):
+            global center_area
+            global info_area
+            if (is_inside( chat_area, [x,y,w,h ]   ) or 
+                is_inside( player_area, [x,y,w,h ] ) or 
+                is_inside( info_area,   [x,y,w,h ] ) ): 
+                # is_in( [x,y,w,h],  center_pos ) ):
                 continue
             moving_objects.append( [x,y,w,h ] ) 
             cv2.rectangle(src, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -420,10 +436,12 @@ def find_moving_objects_while_moving():
 
     # 外接矩形された画像を表示
     cv2.imshow('output', src)
-    cv2.moveWindow("output", 900,20)
+    cv2.moveWindow("output", 1024,968)
     cv2.waitKey(10)
 
-    print( "detect %d moving object" % (detect_count ), flush=True )
+    #if True:
+    if debug:
+        print( "detect %d moving object" % (detect_count ), flush=True )
 
 
 

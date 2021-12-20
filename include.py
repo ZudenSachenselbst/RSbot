@@ -1181,8 +1181,10 @@ def map_locate( file ):
     #resized_img = cv2.resize(img,(width*2.5, height*2.5))
     cv2.imshow('map2', resized_img)
     #cv2.moveWindow("map2", 1200,40)
-    cv2.moveWindow("map2", 1000,40)
-    cv2.waitKey(100)
+    #cv2.moveWindow("map2", 1000,40)
+    cv2.moveWindow("map2", 1024,0)
+    #cv2.waitKey(100)
+    cv2.waitKey(10)
 
 
 def is_vicinity( p, q, offset=10): # not used
@@ -1235,9 +1237,10 @@ def pixel2view_new(pixel):
 def pixel2view(x,y):    # pixel x,y
     return (x*23, y*23)
 
-def goto_object(name): 
+def goto_object(name, status_shared = None ): 
     # 現在のマップや別のマップの人物やオブジェクトのところへ移動する。
     global status
+    #global status_shared_global
     route = find_route( status["mapName"], name) 
     print("route=", route)
     #for waypoint in route:
@@ -1246,9 +1249,15 @@ def goto_object(name):
         if   from_type == "map" and to_type == "map":
             mapname = from_name
             initialize2(mapname)   # 新しいmap に入った時点ですること
-            result = goto_pixel( x, y) 
+            result = goto_pixel( x, y, status_shared ) 
             if result:
+                if status_shared is not None:
+                    status_shared["where"] = "gate"
+                time.sleep(5)
                 click_gate()
+                if status_shared is not None and status_shared["where"] == "gate" :
+                    # print(">>> goto_object() where=\"\" ") 
+                    status_shared["where"] = ""
                 time.sleep(5)
             else:
                 print("failed!")
@@ -1258,7 +1267,7 @@ def goto_object(name):
             mapname = from_name
             character_name = to_name
             initialize2(mapname)   # 新しいmap に入った時点ですること
-            result = goto_pixel( x, y) 
+            result = goto_pixel( x, y, status_shared ) 
             if result:
                 #click_object(character_name) 
                 click_NPC(character_name) 
@@ -1273,7 +1282,7 @@ def goto_object(name):
                 globals()[func](arg1, arg2, arg3)
 
 
-def goto_pixel(x,y):  # pixel x,y
+def goto_pixel(x,y, status_shared = None ):  # pixel x,y
     print("●entered goto_pixel")
     # 現在のマップの特定の pixel 位置に移動する。
     goal = (x,y)    # pixel coordinate
@@ -1295,7 +1304,10 @@ def goto_pixel(x,y):  # pixel x,y
     list(map( lambda x: {print(x)} , enumerate(waypoints)))
     prev_xx = xx = 0
     prev_yy = yy = 0
-    for i, waypoint in enumerate(waypoints):
+    #for i, waypoint in enumerate(waypoints):
+    i = 0
+    while i < len( waypoints): 
+        waypoint = waypoints[i]
         print("moving to ", i, waypoint ) 
         prev_xx = xx
         prev_yy = yy
@@ -1309,17 +1321,33 @@ def goto_pixel(x,y):  # pixel x,y
         vec2 = ( -1 * vec[1], vec[0] ) # orthogonal to vector
         
 
-        my_status = move_to( xx,yy ) 
+        my_status = move_to( xx,yy, status_shared ) 
+
+        '''
+        # １つ先の waypoint に到着している
+        if  not my_status and ( i+1 < len(waypoints) ):
+            next_waypoint = waypoints[i+1]
+            next_bx, next_by,_,_  = next_waypoint
+            next_xx, next_yy = pixel2pos( next_bx, next_by )
+            if is_reached(next_xx, next_yy):
+                print(">>> goto_pixel(): reached next waypoint") 
+                i += 2
+                continue 
+        '''
 
         try_count = 0
         while not my_status:
-            try_count += 1
+            # try_count += 1
+            if status_shared is not None and status_shared["where"] == "fighting":
+                pass
+            else:
+                try_count += 1
             if try_count == 10:
                 break
 
             # とりあえず１つ前のwaypoint にもどる　
 
-            move_to( prev_xx,prev_yy ) 
+            move_to( prev_xx,prev_yy, status_shared ) 
 
             # 障害物から離れる方向に移動する
             # だんだん大きく離れる
@@ -1350,6 +1378,9 @@ def goto_pixel(x,y):  # pixel x,y
         else:
             print( "stacked!!") 
             break
+
+        i += 1
+
     if my_status:
         return True
     else:
@@ -1433,6 +1464,30 @@ def adjust_waypoint( grid, x,y):    # pixel x,y
 
     return ( adj_x, adj_y)
 
+
+
+def circle_around(point):
+    x, y = point
+    r = 1
+    i, j = x-1, y-1
+    while True:
+        while i < x+r:
+            i += 1
+            yield r, (i, j)
+        while j < y+r:
+            j += 1
+            yield r, (i, j)
+        while i > x-r:
+            i -= 1
+            yield r, (i, j)
+        while j > y-r:
+            j -= 1
+            yield r, (i, j)
+        r += 1
+        j -= 1
+        yield r, (i, j)
+
+
 def find_path(file, start, goal, retry=False):   # pixel x,y
 
 
@@ -1463,30 +1518,6 @@ def find_path(file, start, goal, retry=False):   # pixel x,y
 
     # 出発地、目的地が地図上でブランク(0,0,0)でないと astar() がエラーする
     # その場合は出発地、目的地を近傍の blank 地点に変更する。
-
-    '''
-    # globals.py に移動
-    def circle_around(point):
-        x, y = point
-        r = 1
-        i, j = x-1, y-1
-        while True:
-            while i < x+r:
-                i += 1
-                yield r, (i, j)
-            while j < y+r:
-                j += 1
-                yield r, (i, j)
-            while i > x-r:
-                i -= 1
-                yield r, (i, j)
-            while j > y-r:
-                j -= 1
-                yield r, (i, j)
-            r += 1
-            j -= 1
-            yield r, (i, j)
-    '''
 
 
     def find_room_nearby(grid, point ):
@@ -1834,6 +1865,30 @@ def is_reached(x,y):   #position x,y
         return False
 
 
+def is_reached_nearby_waypoint( waypoints ): 
+    cx,cy = getPositionNew()
+    for i, waypoint in enumerate(waypoints):
+        x, y = waypoint
+
+        range=3
+        if  range >= abs(x-cx) and range >= abs(y-cy):
+            print("reached waypoint %d" % i )
+            return i 
+    return -1
+
+def find_nearby_waypoint( waypoints ): 
+    cx,cy = getPositionNew()
+    sorted_waypoints = sorted( waypoints , lambda p: -( abs(p[0]-cx) + abs(p[1]-cy) )  )
+    nearby_waypoint = sorted_waypoints[0]
+
+    for i in range( len(waypoints) ):
+        if nearby_waypoint == waypoints[i]:
+            break
+    return i
+
+
+
+
 def click_gate():
     # 見えている範囲のゲートをクリックする。
     # 30,10 - 70x40
@@ -1879,7 +1934,14 @@ def click_gate():
             # click(x,y,0.5)
             #MoveMouse(x,y ) 
             #time.sleep(1.0)
-            click(x,y,2.0)
+
+            #click(x,y,2.0)
+            click(x,y,0.5)
+            click(x,y,0.5)
+            click(x,y,0.5)
+            time.sleep(0.5)
+
+
             '''
             click(x-100,y-100,0.5)
             click(x    ,y-100,0.5)
@@ -1964,8 +2026,15 @@ def click_NPC(name):   # pixel x,y
 
 
 
-def move_toward(x,y):   #position x,y
+def move_toward(x,y, status_shared = None):   #position x,y
+    # global status_shared_global
     if is_reached(x,y):
+        return
+
+    #if status["where"] == "fighting":
+    if status_shared is not None and status_shared["where"] == "fighting":
+        print(">>> move_toward() suppress")
+        time.sleep(1.0)
         return
 
     cx,cy = getPositionNew()
@@ -2000,12 +2069,12 @@ def move_toward(x,y):   #position x,y
             break
 
 
-def move_to(x,y):   #position x,y
+def move_to(x,y, status_shared = None):   #position x,y
     #for i in range(100): 
     #while True:
     #for i in range(10):
     for i in range(5):
-        move_toward(x,y)
+        move_toward(x,y, status_shared )
         map_locate("path.png")
         time.sleep(0.5) 
         if is_reached(x,y):
@@ -2300,6 +2369,16 @@ def initialize2(mapname):
     # 新マップに入ったときの一連の処理
     # goto_object() から呼ばれることを想定
     global status
+
+    # 復帰者ボーナスのキャンセル
+    pos = pyautogui.locateCenterOnScreen( "img/x_button.bmp", grayscale=True, region=(0,0,800,600 ),confidence=0.9)
+    if pos is not None:
+        print("復帰者ボーナス")
+        x,y = pos
+        print(x,y)
+        click(x,y,0.5)
+        time.sleep(1.0)
+
     closeMap()
     closeDialogue()
     #getFieldName()
@@ -2329,7 +2408,7 @@ def initialize():
     # 非 async 関数
 
     os.chdir("z:\\")
-    adjustRSWindow()
+    # adjustRSWindow()
     focusRS()
     if pyautogui.locateOnScreen( "img/REDSTONE.bmp", grayscale=True, region=(0,0,800,600 ),confidence=0.9):
         print("ログイン画面")
@@ -2360,11 +2439,12 @@ def initialize():
         click(x,y,0.5)
         time.sleep(1.0)
 
+    prepare_world_map()
+    prepare_skill()
+
     closeMap()
     closeDialogue()
     #getFieldName()
-    prepare_world_map()
-    prepare_skill()
     getMapName()
     #getCP()
     getCPNew()

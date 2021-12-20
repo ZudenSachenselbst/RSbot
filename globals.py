@@ -73,6 +73,7 @@ status = {
 
     } 
 
+#status_shared_global = None
 ###############
 # 敵関係
 
